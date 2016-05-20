@@ -1,0 +1,15 @@
+$icon-font-path: '../fonts/';
+$images-path: '../images/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "base/_typografhy.scss";
+@import "pages/index.scss";
+
+// endbower
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
