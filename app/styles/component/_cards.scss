@@ -1,0 +1,23 @@
+.conter__card {
+  text-align: center;
+
+  .conter__image{
+      max-width: 152px;
+  }
+
+  .conter__price {
+    display: block;
+    font-size: 80px;
+    color: white;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .conter__title {
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+}

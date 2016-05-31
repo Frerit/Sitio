@@ -1,0 +1,36 @@
+.main-header {
+  display: block;
+  ul {
+    margin: 0;
+    float: right;
+    > li {
+      height: 100%;
+      padding: 0;
+      > a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        color: $dove-gray;
+        font-weight: bold;
+        line-height: 15px;
+        padding: (($HEADER - 15px) / 2) 10px;
+        &:hover {
+          background: $seashell;
+        }
+      }
+    }
+  }
+}
+.main-header__logo {
+  height: $HEADER;
+  display: inline-block;;
+  padding: 10px 0;
+  img {
+    max-height: 100%;
+  }
+}
+.main-header__menu-xs {
+    float: right;
+    height: 100%;
+    margin: (($HEADER - 35px) / 2) 10px;
+}

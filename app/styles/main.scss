@@ -2,14 +2,15 @@ $icon-font-path: '../fonts/';
 $images-path: '../images/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "base/_typografhy.scss";
-@import "pages/index.scss";
+@import "base/_typografhy";
+@import "base/_grid";
+@import "abstracts/_variables";
+@import "component/_cards";
+@import "component/_inline-menu";
+@import "component/_social-icons";
+@import "layout/_header";
+@import "layout/_footer";
+@import "pages/index";
+
 
 // endbower
-
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}

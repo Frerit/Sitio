@@ -1,0 +1,12 @@
+
+// Colors
+$shark :      rgb(44, 48, 51);
+$dove-gray :  rgb(103, 103, 103);
+$seashell :   rgb(241, 241, 241);
+// Constants
+$HEADER :     100px;
+$HEADER-XS :  60px;
+
+@media (max-width: $screen-sm-max) {
+  $HEADER : $HEADER-XS ;
+}
