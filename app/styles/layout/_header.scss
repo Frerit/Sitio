@@ -1,13 +1,14 @@
 .main-header {
   display: block;
   height: $HEADER;
-
+  position: fixed;
+  background: white;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
   @media (max-width: $screen-xs-max) {
-    position: fixed;
     height: $HEADER-XS;
-    background: white;
-    z-index: 1;
   }
 
   ul {
@@ -46,9 +47,7 @@
 .main-header__menu-xs {
     float: right;
     height: 100%;
-    margin: (($HEADER - 35px) / 2) 10px;
-    @media (max-width: $screen-sm-max) {
-      margin: (($HEADER-XS - 35px) / 2) 10px;
-    }
+    margin: (($HEADER-XS - 35px) / 2) 10px;
+
 
 }

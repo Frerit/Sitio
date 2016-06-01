@@ -1,8 +1,11 @@
 
 // Colors
-$shark :      rgb(44, 48, 51);
-$dove-gray :  rgb(103, 103, 103);
-$seashell :   rgb(241, 241, 241);
+$shark :         rgb(44, 48, 51);
+$dove-gray :     rgb(103, 103, 103);
+$seashell :      rgb(241, 241, 241);
 // Constants
-$HEADER :     100px;
-$HEADER-XS :  60px;
+$HEADER :        100px;
+$HEADER-XS :     60px;
+
+// Animacion
+$cubic-efect :  cubic-bezier(.55, 0, -1, 1);

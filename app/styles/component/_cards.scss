@@ -3,6 +3,7 @@
 
   .conter__image{
       max-width: 152px;
+      margin-bottom: 30px;
   }
 
   .conter__price {
@@ -17,7 +18,11 @@
     font-size: 16px;
     color: white;
     margin-top: 0;
-    margin-bottom: 30px;
+
+    @media (max-width: $screen-sm-max) {
+        margin-bottom: 30px;
+    }
+
   }
 
 }

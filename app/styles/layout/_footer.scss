@@ -1,22 +1,24 @@
 .main-footer {
   background-color: rgb(44,48,51);
-  padding: 45px 0px;
+  padding: 45px 0;
 
-  .menu__listado{
-
+  .menu__listado {
     > li {
-      line-height: 1;
-      padding: 0;
+      padding: 0 10px;
+      line-height: 2;
 
-      &:not(:last-child){
-        border-right: 1px solid white;
-        padding: 0px 5px
+      @media (min-width: $screen-sm-min) {
+        padding: 0 5px;
+        &:not(:last-child) {
+          border-right: 1px solid white;  
+          line-height: 1;
+        }
       }
 
       > a {
         text-decoration: none;
         color: white;
-        padding-right: 2px;
+        padding-right: 5px;
       }
     }
   }
