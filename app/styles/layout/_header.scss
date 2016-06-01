@@ -1,5 +1,15 @@
 .main-header {
   display: block;
+  height: $HEADER;
+
+
+  @media (max-width: $screen-xs-max) {
+    position: fixed;
+    height: $HEADER-XS;
+    background: white;
+    z-index: 1;
+  }
+
   ul {
     margin: 0;
     float: right;
@@ -14,6 +24,7 @@
         font-weight: bold;
         line-height: 15px;
         padding: (($HEADER - 15px) / 2) 10px;
+
         &:hover {
           background: $seashell;
         }
@@ -23,6 +34,9 @@
 }
 .main-header__logo {
   height: $HEADER;
+  @media (max-width: $screen-xs-max) {
+    height: $HEADER-XS;
+  }
   display: inline-block;;
   padding: 10px 0;
   img {
@@ -33,4 +47,8 @@
     float: right;
     height: 100%;
     margin: (($HEADER - 35px) / 2) 10px;
+    @media (max-width: $screen-sm-max) {
+      margin: (($HEADER-XS - 35px) / 2) 10px;
+    }
+
 }

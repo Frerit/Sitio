@@ -6,7 +6,3 @@ $seashell :   rgb(241, 241, 241);
 // Constants
 $HEADER :     100px;
 $HEADER-XS :  60px;
-
-@media (max-width: $screen-sm-max) {
-  $HEADER : $HEADER-XS ;
-}

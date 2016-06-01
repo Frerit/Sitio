@@ -1,3 +1,8 @@
+body {
+  @media (max-width: $screen-xs-max) {
+    margin-top: $HEADER-XS;
+  }
+}
 
 .seccioncontador {
   background: url('../images/bg-parallax-section.jpg') center no-repeat;
