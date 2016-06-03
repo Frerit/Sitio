@@ -1,3 +1,16 @@
+@media (max-width: $screen-xs-max) {
+  .menu__small {
+    padding: 0;
+    left: 100%;
+
+    &.main_enable{
+      left: 0;
+      background-color: white;
+    }
+  }
+}
+
+
 .main-header {
   display: block;
   height: $HEADER;
@@ -14,9 +27,18 @@
   ul {
     margin: 0;
     float: right;
+
+    @media (max-width: $screen-xs-max) {
+      float: none;
+      margin: 0 auto;
+    display: block;
+    }
     > li {
       height: 100%;
       padding: 0;
+      @media (max-width: $screen-xs-max) {
+      display: block;
+      }
       > a {
         display: block;
         height: 100%;
@@ -25,6 +47,8 @@
         font-weight: bold;
         line-height: 15px;
         padding: (($HEADER - 15px) / 2) 10px;
+
+
 
         &:hover {
           background: $seashell;
@@ -48,6 +72,4 @@
     float: right;
     height: 100%;
     margin: (($HEADER-XS - 35px) / 2) 10px;
-
-
 }
