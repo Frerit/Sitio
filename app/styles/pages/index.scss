@@ -28,7 +28,7 @@ body {
 .main__prefooter {
   @extend .seccioncontador ;
   padding: 40px 0px;
-   background: url('#{$images-path}/fond-of-faces.jpg')left repeat / contain;
+   background: url('#{$images-path}/backgroundtestimonio.jpg')left repeat / contain;
 
    &::before{
      background: $tuna;
