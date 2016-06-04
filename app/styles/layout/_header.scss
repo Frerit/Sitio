@@ -1,15 +1,16 @@
 @media (max-width: $screen-xs-max) {
   .menu__small {
+    height: 100vh;
     padding: 0;
     left: 100%;
 
     &.main_enable{
       left: 0;
       background-color: white;
+      transition: $cubic-efect;
     }
   }
 }
-
 
 .main-header {
   display: block;
@@ -47,8 +48,6 @@
         font-weight: bold;
         line-height: 15px;
         padding: (($HEADER - 15px) / 2) 10px;
-
-
 
         &:hover {
           background: $seashell;

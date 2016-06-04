@@ -1,0 +1,59 @@
+   .main_testimonio {
+     text-align: center;
+     .testimonio_title {
+       display: block;
+       font-family: $font-prin;
+       font-size: 33px;
+       color:$mandy;
+     }
+   }
+
+  .item__contenido {
+    text-align: center;
+    color: white;
+
+    > img {
+      margin-top: 10px;
+      border: 7px solid $mandy;
+      max-width: 150px;
+      max-height: 150px;
+    }
+    > span {
+      display: block;
+    }
+    .item__name {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .item__texto-sm {
+      font-size: 13px;
+      color: $mandy;
+    }
+    .item_descripcion {
+      font-size: 16px;
+      font-style: italic;
+      width: 50%;
+      line-height: 0.9;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 34px;
+
+      @media (max-width: $screen-xs-max) {
+        width: 90%
+      }
+
+      &:before{
+        font-size: 20px;
+        content:"\201C";
+      }
+      &:after{
+        font-size: 20px;
+        content:"\201D";
+      }
+    }
+  }
+
+  .indicator{
+
+  }

@@ -6,8 +6,7 @@ body {
 }
 
 .seccioncontador {
-  background: url('../images/bg-parallax-section.jpg') center no-repeat;
-  background-size: cover;
+  background: url('#{$images-path}/bg-parallax-section.jpg') center no-repeat / cover;
   display: block;
   position: relative;
   height: 100%;
@@ -20,9 +19,33 @@ body {
     width: 100%;
     height: 100%;
     bottom: 0px;
-    background: #000;
+    background:$shark;
 	   opacity: 0.50;
 	  -moz-opacity: 0.50;
 	  filter:alpha(opacity=50);
   }
+}
+.main__prefooter {
+  @extend .seccioncontador ;
+  padding: 40px 0px;
+   background: url('#{$images-path}/fond-of-faces.jpg')left repeat / contain;
+
+   &::before{
+     background: $tuna;
+     opacity: 0.90;
+   }
+ }
+
+/*Alteracion del Carousel */
+.carousel-indicators {
+  bottom: -5px;
+}
+
+.carousel-indicators li {
+  background-color: white;
+  border: 1px solid white;
+}
+.carousel-indicators .active {
+  background-color: $mandy;
+  border: 1px solid $mandy;
 }
